@@ -13,7 +13,9 @@ from models.review import Review
 from models.engine.file_storage import FileStorage
 from datetime import datetime
 
-""" console for the command promt module"""
+"""
+Module consule.py a cmd console
+"""
 
 
 class HBNBCommand(cmd.Cmd):
