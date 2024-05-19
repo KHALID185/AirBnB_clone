@@ -125,7 +125,9 @@ class HBNBCommand(cmd.Cmd):
             print("** class doesn't exist **")
 
     def do_update(self, args):
-        """ first update of our module base"""
+        ''' Updates an instance based on the class name & id adding/updating
+            attribute (save the change into the JSON file). Ex: $ update
+            BaseModel 1234-1234-1234 email "aibnb@holbertonschool.com". '''
 
         if not args:
             print("** class name missing **")
