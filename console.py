@@ -1,4 +1,5 @@
-mport cmd
+#!/usr/bin/python3
+import cmd
 import json
 import shlex
 from models.base_model import BaseModel
