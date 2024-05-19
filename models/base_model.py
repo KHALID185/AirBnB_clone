@@ -37,7 +37,7 @@ class BaseModel():
         Returns a string representation of the instance.
         Format: "[<class name>] (<self.id>) <self.__dict__>"
         '''
-        return '[{}] ({}) {}'.format(
+        return ('[{}] ({}) {}'.format(
                 self.__class__.__name__,
                 self.id,
                 self.__class__.__dict__))
