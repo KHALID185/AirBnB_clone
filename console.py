@@ -46,7 +46,7 @@ class HBNBCommand(cmd.Cmd):
         pass
 
     def emptyline(self):
-        '''the fct command for empty line'''
+        ''' an empty line + ENTER shouldn’t execute anything '''
         pass
 
     def do_create(self, args):
