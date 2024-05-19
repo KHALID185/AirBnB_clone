@@ -31,12 +31,12 @@ class HBNBCommand(cmd.Cmd):
     }
 
     def do_EOF(self, arg):
-        '''Quit command to exit the program'''
+        '''Quit a command cntrlD to exit the program'''
         print("")
         return True
 
     def do_quit(self, arg):
-        '''Quit command to exit the program'''
+        ''' Quit command to exit the program '''
         return True
 
     def do_nothing(self, arg):
