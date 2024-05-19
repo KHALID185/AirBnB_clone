@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-
 """Module base_model
-Defines a class that serves as a base for other classes, providing common attributes and methods."""
+Defines a class that serves as a base for other classes,
+providing common attributes and methods.
+"""
 from uuid import uuid4
 from datetime import datetime
 from models import storage
@@ -9,9 +10,14 @@ import json
 import sys
 import os.path
 
+
 class BaseModel():
-        '''A base class for other classes'''
+    '''A base class for other classes'''
+
     def __init__(self, *args, **kwargs):
+        '''
+        values initialization
+        '''
         if kwargs:
             date_format = '%Y-%m-%dT%H:%M:%S.%f'
             attributes = kwargs.copy()
@@ -31,15 +37,19 @@ class BaseModel():
         Returns a string representation of the instance.
         Format: "[<class name>] (<self.id>) <self.__dict__>"
         '''
-        return '[{}] ({}) {}'.format(self.__class__.__name__, self.id, self.__dict__)
+        return '[{}] ({}) {}'.format(
+                self.__class__.__name__,
+                self.id,
+                self.__class__.__dict__))
+
     def save(self):
         self.updated_at = datetime.now()
         storage.save()
 
     def to_dict(self):
         '''
-        Returns a dictionary containing all keys and values of the instance's
-        __dict__.
+        Returns a dictionary containing all keys 
+        and values of the instance's __dict__.
         '''
         result_dict = {}
         result_dict["__class__"] = self.__class__.__name__
@@ -60,4 +70,3 @@ class BaseModel():
         if hasattr(self, 'updated_at'):
             json_dict.update({'updated_at': self.updated_at.strftime(self.date_format)})
         return json_dict
-
