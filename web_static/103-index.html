@@ -1,23 +1,26 @@
-CTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="zxx">
 	<head>
-		<link rel="shortcut icon" href="../images/icon.png" type="image/x-icon" />
-		<link rel="stylesheet" href="styles/101-places.css" />
-		<link rel="stylesheet" href="styles/6-filters.css" />
-		<link rel="stylesheet" href="styles/3-footer.css" />
-		<link rel="stylesheet" href="styles/3-header.css" />
-		<link rel="stylesheet" href="styles/4-common.css" />
+		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0, minimum-scale=0.86">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="shortcut icon" href="images/icon_title.png" type="image/x-icon">
 		<link
-			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-			rel="stylesheet"
-			integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-			crossorigin="anonymous"
-			/>
+		href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		rel="stylesheet"
+		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+		crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="styles/4-common.css" />
+		<link rel="stylesheet" href="styles/3-header.css" />
+		<link rel="stylesheet" href="styles/3-footer.css" />
+		<link rel="stylesheet" href="styles/6-filters.css" />
+		<link rel="stylesheet" href="styles/103-places.css">
 		<title>
 			Airbnb Front
 		</title>
 	</head>
+
 	<body>
 		<header></header>
 		<div class="container">
@@ -60,27 +63,26 @@ CTYPE html>
 			</section>
 			<section class="places">
 				<h1>Places</h1>
-				<div class="boxes">
 					<article>
 						<h2>Home</h2>
 						<div class="price_by_night">
-							$80
+							<p>$80</p>
 						</div>
 						<div class="information">
 							<div class="max_guest">
-								<div class="img1"></div>
+								<div class="icon-guest"></div>
 								<p>2 Guests</p>
 							</div>
 							<div class="number_rooms">
-								<div class="img2"></div>
+								<div class="icon-rooms"></div>
 								<p>1 Bedroom</p>
 							</div>
 							<div class="number_bathrooms">
-								<div class="img3"></div>
+								<div class="icon-bathrooms"></div>
 								<p>1 Bedroom</p>
 							</div>
 						</div>
-						<div class="user"><strong>Owner:</strong> Juanito</div>
+						<div class="user"><p><b>Owner:</b> Juanito</p></div>
 						<div class="description">
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
 							reprehenderit reiciendis consequatur, accusamus quia accusantium
@@ -89,9 +91,9 @@ CTYPE html>
 						<div class="amenities">
 							<h2>Amenities</h2>
 							<ul>
-								<li><i class="fa fa-tv"></i> TV</li>
-								<li><i class="fa fa-wifi"></i> Wifi</li>
-								<li><i class="fa fa-paw"></i> Pets friendly</li>
+								<li><div class="icon-tv"></div> TV</li>
+								<li><div class="icon-wifi"></div> Wifi</li>
+								<li><div class="icon-pets-friendly"></div> Pets friendly</li>
 							</ul>
 						</div>
 						<div class="reviews">
@@ -119,34 +121,36 @@ CTYPE html>
 					<article>
 						<h2>Tiny House</h2>
 						<div class="price_by_night">
-							$65
+							<p>$65</p>
 						</div>
 						<div class="information">
 							<div class="max_guest">
-								<div class="img1"></div>
-								<p>2 Guests</p>
+								<div class="icon-guest"></div>
+								<p>6 Guests</p>
 							</div>
 							<div class="number_rooms">
-								<div class="img2"></div>
+								<div class="icon-rooms"></div>
 								<p>1 Bedroom</p>
 							</div>
 							<div class="number_bathrooms">
-								<div class="img3"></div>
+								<div class="icon-bathroom"></div>
 								<p>1 Bedroom</p>
 							</div>
 						</div>
-						<div class="user"><strong>Owner:</strong> Jeniffer</div>
+						<div class="user"><p><b>Owner:</b> Jeniffer</p></div>
 						<div class="description">
 							distinctio quod aliquid officiis animi expedita vero! Omnis
 							laudantium possimus, ad nihil minima sapiente veniam doloribus
 							laudantium possimus, ad nihil minima sapiente veniam doloribus
 						</div>
+						<div class="description">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus molestias ullam
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus molestias ullam
+						</div>
 						<div class="amenities">
 							<h2>Amenities</h2>
 							<ul>
-								<li><i class="fa fa-tv"></i> TV</li>
-								<li><i class="fa fa-wifi"></i> Wifi</li>
-								<li><i class="fa fa-paw"></i> Pets friendly</li>
+								<li><div class="icon-pets-friendly"></div> Pets friendly</li>
 							</ul>
 						</div>
 						<div class="reviews">
@@ -158,14 +162,6 @@ CTYPE html>
 									Lorem ipsum dolor sit amet consectetur adipisicing elit.
 									doloremque neque maxime ratione ab architecto odit, tempora
 									doloremque neque maxime ratione ab architecto odit, tempora
-									</p>
-								</li>
-								<li>
-									<h3>From Freddie Mercury the 31th october 1987</h3>
-									<p>
-									Nihil voluptatibus inventore sed cupiditate est minima quia
-									Nihil voluptatibus inventore sed cupiditate est minima quia
-									Nihil voluptatibus inventore sed cupiditate est minima quia
 									</p>
 								</li>
 							</ul>
@@ -174,64 +170,34 @@ CTYPE html>
 					<article>
 						<h2>A Suite</h2>
 						<div class="price_by_night">
-							$180
+							<p>$170</p>
 						</div>
 						<div class="information">
 							<div class="max_guest">
-								<div class="img1"></div>
+								<div class="icon-guest"></div>
 								<p>2 Guests</p>
 							</div>
 							<div class="number_rooms">
-								<div class="img2"></div>
+								<div class="icon-rooms"></div>
 								<p>1 Bedroom</p>
 							</div>
 							<div class="number_bathrooms">
-								<div class="img3"></div>
+								<div class="icon-bathrooms"></div>
 								<p>1 Bedroom</p>
 							</div>
 						</div>
-						<div class="user"><strong>Owner:</strong> Pepe</div>
+						<div class="user"><p><b>Owner:</b> Pepe</p></div>
 						<div class="description">
 							veritatis commodi atque impedit libero, minus quos vitae itaque
 							veritatis commodi atque impedit libero, minus quos vitae itaque
 							veritatis commodi atque impedit libero, minus quos vitae itaque
 						</div>
-						<div class="amenities">
-							<h2>Amenities</h2>
-							<ul>
-								<li><i class="fa fa-tv"></i> TV</li>
-								<li><i class="fa fa-wifi"></i> Wifi</li>
-								<li><i class="fa fa-paw"></i> Pets friendly</li>
-							</ul>
-						</div>
-						<div class="reviews">
-							<h2>2 Reviews</h2>
-							<ul>
-								<li>
-									<h3>From Bob Dylan the 27th January 2017</h3>
-									<p>
-									Lorem ipsum dolor sit amet consectetur adipisicing elit.
-									Lorem ipsum dolor sit amet consectetur adipisicing elit.
-									Lorem ipsum dolor sit amet consectetur adipisicing elit.
-									Lorem ipsum dolor sit amet consectetur adipisicing elit.
-									</p>
-								</li>
-								<li>
-									<h3>From Freddie Mercury the 31th october 1987</h3>
-									<p>
-									et fuga sint rerum commodi ea aut quis consequuntur, ab
-									et fuga sint rerum commodi ea aut quis consequuntur, ab
-									et fuga sint rerum commodi ea aut quis consequuntur, ab
-									</p>
-								</li>
-							</ul>
-						</div>
 					</article>
-				</div>
 			</section>
 		</div>
 		<footer>
-			Best School
+			<div>Best School</div>
 		</footer>
 	</body>
+
 </html>
